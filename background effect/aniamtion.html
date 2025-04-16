@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+        #div1{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            animation-name: rotate-90-cw;
+            animation-duration: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">hello</div>
+</body>
+</html>
