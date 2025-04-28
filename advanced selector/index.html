@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color: blue;}
+        ul > li{
+            color: aqua;
+            font-weight: bold;
+            font-style: italic;
+        }
+        h2 , p{
+            font-style: italic;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            background-color: antiquewhite;
+            padding: 7px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(234, 0, 255);
+            background-color: aqua;
+        }
+        ul > li:hover{
+            cursor: pointer;
+            color: aliceblue;
+        }
+        ul > li:nth-last-child(1){
+            color: red;
+            
+        }
+        ul > li::after{
+            content:"🤡"
+        }
+        p::first-line{
+            background-color: rgb(222, 215, 250);
+        }
+        p::first-letter{
+            font-size: 25px;
+            color: brown;
+        }
+        input[type="password"]{
+            border: 2px solid red;
+        }
+        input[type="text"]{
+            border: 2px solid rgb(111, 0, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to space explorer</h1>
+    <ul>
+        <li>moon mission</li>
+        <li>planting bomb in mars</li>
+        <li>mars rovers</li>
+        <li>space station</li>
+    </ul>
+    <h2>Paragraphs</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia rerum velit modi nobis, officiis quo incidunt libero saepe ipsa ipsum similique eaque quam sed rem? Reprehenderit nobis quo aliquid aut.
+    </p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam est quos repellat, sit fugiat. Corrupti repellendus temporibus quae vel?</p>
+
+    <a href="#">join our mission</a>
+    <a href="#">space news</a>
+    <br><br>
+   text type <input type="text"><br><br>
+   password <input type="password">
+    
+</body>
+</html>
