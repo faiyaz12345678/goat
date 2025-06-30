@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+
+        div {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .container {
+            position: relative;
+            height: 500px;
+            background-color: bisque;
+        }
+
+        .static {
+            position: static;
+            background-color: lightcoral;
+
+        }
+
+        .absolute {
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            background-color: rgb(206, 182, 23);
+        }
+
+        .fixed {
+            background-color: rgb(170, 228, 170);
+            bottom: 0;
+            right: 0;
+            position: fixed;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: rgb(62, 189, 201);
+            top: 0;
+            z-index: 5;
+            
+        }
+        div{
+            background-color: rgba(51, 32, 218, 0.516);
+            padding: 10px;
+        }
+        div.first{
+            opacity: 0.1;
+        }
+        div.second{
+            opacity: 0.3;
+        }
+        div.third {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+       <b>sticky</b>- this will be in screen no matter what happens
+    </div>
+    <section class="container">
+        <div class="static">static</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+    </section>
+    <div class="bottom">
+        bottom
+    </div>
+
+    <div class="first">
+        <p>opacity0.1</p>
+    </div>
+    <div class="second">
+        <p>opacity0.3</p>
+    </div>
+    <div class="third">
+        <p>opacity0.6</p>
+    </div>
+    <div>
+        <p>opacity1(default)</p>
+    </div>
+
+
+</body>
+
+</html>
