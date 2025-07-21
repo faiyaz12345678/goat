@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstname: "Faiyaz",
+            lastname: "Wasi",
+            age: "55",
+            status: "unemployed",
+            isMarried: "No",
+            hobby : "Football"
+
+        }
+
+        document.getElementById('demo').innerHTML = `My name is ${person.firstname}.My age is ${person.age} and i am currently ${person.status}.My hobby is ${person.hobby}.`
+        var color = ["white","black","red"]
+        document.write("before poping the colors are:" + color.join("^"));
+        document.write("My favourite color is : " +color[3]);
+
+    </script>
+</body>
+</html>
