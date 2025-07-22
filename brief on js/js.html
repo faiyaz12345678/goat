@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><b>Click the button</b></h2>
+    <button onclick="greet()">click me</button>
+    <p id="time"></p>
+    <p id="msg"></p>
+
+    <script>
+        function greet() {
+             let date = new Date();
+            let hour = date.getHours();
+            let min = date.getMinutes();
+
+            document.getElementById('time').innerHTML = hour + ":" + min
+            if (hour >=0 && hour <= 12){
+                document.getElementById("msg").innerHTML = "Good morning"
+            }
+            else if (hour >= 12 && hour <= 18){
+                document.getElementById("msg").innerHTML = "Good afternoon"
+            }
+            else if (hour >= 18 && hour <= 22) {
+                document.getElementById("msg").innerHTML = "Good evening"
+            }
+            else {
+                document.getElementById("msg").innerHTML = "Good night"
+            }
+        
+        
+        }
+       
+    </script>
+</body>
+</html>
